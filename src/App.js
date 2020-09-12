@@ -1,18 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
-import ThankYou from './components/ThankYou';
-import EditOrder from './components/EditOrder';
-import WebContact from './components/WebContact';
+
+
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <ThankYou/>
-      <EditOrder/>
-      <WebContact/>
+     <NavBar/>
       </header>
     </div>
   );
