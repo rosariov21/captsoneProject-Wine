@@ -1,5 +1,5 @@
 import React from 'react'
-import ThankYou from './ThankYou';
+import Beer from './Beer';
 
 import Wine from './Wine';
 import Review from './Review';
@@ -9,6 +9,7 @@ from 'react-router-dom';
 import UserCheckout from './UserCheckout';
 import EditOrder from './EditOrder';
 import WebContact from './WebContact';
+import Home from './Home';
 
 
 function NavBar() {
@@ -16,18 +17,24 @@ function NavBar() {
       
   
         <Router>
-          <div className="route-container">
+          <div className="Nav-animation">
             <nav>
               <ul>
+              <li>
+                <Link className='navBar' to = "/Home">Home</Link>
+                </li>
                 <li>
+                  <Link className="navBar" to ="/Beer">Beer</Link>
+                </li>
+                <li>
+
+                <li>
+                   <Link className="navBar" to ="/Wine">Wine</Link>
+                </li>
                 <Link className='navBar' to = "/Review">Cart</Link>
                 </li>
-                <li>
-                <Link className="navBar" to ="/ThankYou">Questions</Link>
-                 </li>
-                 <li>
-                   <Link className="navBar" to ="/Wine">InforWine</Link>
-                </li>
+              
+                
                 <li>
                   <Link className="navBar" to ="/UserCheckOut">CheckOut</Link>
                 </li>
@@ -44,15 +51,16 @@ function NavBar() {
           <Switch>
   
           
-   <Route  exact path="/Review" component={Review} />
-              <Route path="/ThankYou" component={ThankYou} />
+   <Route  exact path="/Home" component={Home} />
+   <Route path="/Review" component={Review} />
+   <Route path="/Beer" component={Beer} />
               <Route path ="/Wine" component={Wine}/>
               <Route path = "/UserCheckOut" component={UserCheckout}/>
               <Route path = "/EditOrder" component={EditOrder}/>
               <Route path = "/WebContact" component={WebContact}/>
               </Switch>
         </Router>
-      
+    
     
      
       //create the routing path to render
