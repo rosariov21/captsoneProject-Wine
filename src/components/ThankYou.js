@@ -1,10 +1,18 @@
 import React from 'react'
+import { Alert } from 'react-bootstrap'
 
 export default function ThankYou() {
     return (
-        <div>
-           <h5 style={{textAlign: 'center', color: 'Bl', fontFamily: 'cursive' , fontSize: '40px' }}>Thank You. <br/>
-   Check email for any further questions , we will respond within 24hours or three working days.</h5>
-        </div>
+        <Alert variant="success">
+  <Alert>Hey, Thank you again for shopping with us</Alert>
+  <h4>
+    Aww yeah, you successfully read this important alert message. We want you to know we 
+    value your needs. 
+  </h4>
+  <hr />
+  <h3 className="mb-0">
+   Hope to see you again !!
+  </h3>
+</Alert>
     )
 }

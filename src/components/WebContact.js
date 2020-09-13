@@ -4,15 +4,15 @@ export default function WebContact() {
         
             <div className="contactParent">
                 <div className="contacts">
-                <h5 style={{textAlign: 'center', color: 'Bl', fontFamily: 'cursive' , marginTop: '100px' }}>
+                <h5 style={{textAlign: 'center', color: 'Bl' , marginTop: '100px' }}>
                     Contact Us|Location
                     </h5>  
-                    <h3 style={{textAlign: 'center', color: 'Bl', fontFamily: 'cursive' , marginTop: '100px' }}>
+                    <h3 style={{textAlign: 'center', color: 'Bl' , marginTop: '100px' }}>
                     Phone Number: 212-956-9093<br/>
                     Address: 
                     West Side, NY, Ny -10025
                     </h3>
-                    <h3 style={{textAlign: 'center', color: 'Bl', fontFamily: 'cursive' , marginTop: '100px' }}>
+                    <h3 style={{textAlign: 'center', color: 'Bl' , marginTop: '100px' }}>
                     Email: WineAnyTime@gmail.com
                     <br/>
                     <span>Hours of Business Operations </span><br/>

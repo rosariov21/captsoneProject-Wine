@@ -6,13 +6,25 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ThankYou from './components/ThankYou';
 
+import ModalPop from './components/ModalPop';
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+    <div className="container">
+      <div className="jumbotron">
      <NavBar/>
      <ThankYou/>
-      </header>
+     <ModalPop/>
+   
+     <div>
+        <span>
+         
+        </span>
+      </div>
+    </div>
+    </div>
     </div>
   );
 }
