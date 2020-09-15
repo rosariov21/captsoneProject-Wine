@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { Component } from "react";
 import Beer from './Beer';
-
+import shop  from '../images/shop.png'
 import Wine from './Wine';
-import Review from './Review';
+
 import 
 {BrowserRouter as Router, Route, Switch, Link} 
 from 'react-router-dom';
-import UserCheckout from './UserCheckout';
-import EditOrder from './EditOrder';
+
 import WebContact from './WebContact';
 import Home from './Home';
 
+export default class NavBar extends Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
 
-function NavBar() {
+    
     return (
       
   
@@ -26,37 +30,32 @@ function NavBar() {
                 <li>
                   <Link className="navBar" to ="/Beer">Beer</Link>
                 </li>
-                <li>
+                
 
                 <li>
                    <Link className="navBar" to ="/Wine">Wine</Link>
                 </li>
-                <Link className='navBar' to = "/Review">Cart</Link>
-                </li>
-              
-                
-                <li>
-                  <Link className="navBar" to ="/UserCheckOut">CheckOut</Link>
-                </li>
-                <li>
-                  <Link className="navBar" to ="/EditOrder">EditOrder</Link>
-                </li>
+             
+            
                 <li>
                   <Link className="navBar" to ="/WebContact">Contact</Link>
                 </li>
-  
+                <li>
+                <img src={shop} width="50px"/>
+                    {this.props.cartCount}
+                    {this.props.deleteToCart}
+                    
+                </li>
               </ul>
+              
             </nav>
             </div>
           <Switch>
   
           
    <Route  exact path="/Home" component={Home} />
-   <Route path="/Review" component={Review} />
-   <Route path="/Beer" component={Beer} />
-              <Route path ="/Wine" component={Wine}/>
-              <Route path = "/UserCheckOut" component={UserCheckout}/>
-              <Route path = "/EditOrder" component={EditOrder}/>
+   <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart}/>} />
+              <Route path ="/Wine" component={()=><Wine addToCart={this.props.addToCart} deleteToCart={this.props.addToCart}/>}/>
               <Route path = "/WebContact" component={WebContact}/>
               </Switch>
         </Router>
@@ -67,4 +66,4 @@ function NavBar() {
     );
   }
 
-  export default NavBar ;
+}

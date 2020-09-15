@@ -1,12 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import {Cart} from 'react-shopping-cart';
+import ShoppingCart from './components/ShoppingCart';
 
 
-import NavBar from './components/NavBar';
-import ThankYou from './components/ThankYou';
 
 import ModalPop from './components/ModalPop';
+import ThankYou from './components/ThankYou';
+
 
 
 function App() {
@@ -14,9 +16,11 @@ function App() {
     <div className="App">
     <div className="container">
       <div className="jumbotron">
-     <NavBar/>
-     <ThankYou/>
+      <ShoppingCart/>
+    
+     
      <ModalPop/>
+     <ThankYou/>
    
      <div>
         <span>

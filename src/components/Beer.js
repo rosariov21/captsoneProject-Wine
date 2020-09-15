@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import { render } from "@testing-library/react";
+import { Button } from "react-bootstrap";
 export default class Beer extends Component{
     constructor(props){
         super(props);
@@ -28,11 +29,11 @@ export default class Beer extends Component{
             bList.map(beer =>
                 <div className="bigParent" key={beer['id']}>
                  
-                 <div>
-                 <p>Drink Responsibly</p>
-                 </div>
+                 
                 <ol className="center">
                 { /*<h1 className='name'>Name: {beer["name"]}</h1> */}
+                <button onClick={()=>this.props.addToCart(beer)}>add to cart </button>
+                <button onClick={()=>this.props.deleteToCart(beer)}>remove from cart </button>
                 <li>
                     <img  className="BeerImg" src={beer.image_url} alt="Beer Type"/>
                     </li>
