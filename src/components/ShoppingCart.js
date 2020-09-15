@@ -6,11 +6,11 @@ export default class ShoppingCart extends Component{
         super(props);
         this.state = {
             shoppingList:[],
-            deleteShopingList:[]
+           
 
         }
 this.addToCart = this.addToCart.bind(this);
-this.deleteToCart = this.deleteToCart.bind();
+this.deleteToCart = this.deleteToCart.bind(this);
 
     }
    
@@ -19,13 +19,18 @@ this.deleteToCart = this.deleteToCart.bind();
             shoppingList:this.state.shoppingList.concat(item)
 
         })
+        console.log(this.state.shoppingList)
     }
         deleteToCart(item){
+            let shoppingListCopy = [...this.state.shoppingList]
+            console.log(item)
             this.setState({
-                deleteShoppingList:this.state.deleteShoppingList.concat(item)
+                deleteShoppingList:this.state.shoppingList
              })
     
-             console.log(this.state.shoppingList)
+             
+             console.log(this.state.deleteShopingList)
+
     }
  render (){
     return(

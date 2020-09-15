@@ -5,6 +5,8 @@ export default function ThankYou() {
     return (
         <Alert variant="success">
   <Alert>Hey, Thank you again for shopping with us</Alert>
+
+  
   <h4>
     Aww yeah, you successfully read this important alert message. We want you to know we 
     value your needs. 

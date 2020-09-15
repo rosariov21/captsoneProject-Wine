@@ -19,7 +19,8 @@ export default class NavBar extends Component{
     
     return (
       
-  
+        
+        
         <Router>
           <div className="Nav-animation">
             <nav>
@@ -43,7 +44,7 @@ export default class NavBar extends Component{
                 <li>
                 <img src={shop} width="50px"/>
                     {this.props.cartCount}
-                    {this.props.deleteToCart}
+                    
                     
                 </li>
               </ul>
@@ -54,13 +55,13 @@ export default class NavBar extends Component{
   
           
    <Route  exact path="/Home" component={Home} />
-   <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart}/>} />
+   <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart} deleteToCart={this.props.addToCart}/>} />
               <Route path ="/Wine" component={()=><Wine addToCart={this.props.addToCart} deleteToCart={this.props.addToCart}/>}/>
               <Route path = "/WebContact" component={WebContact}/>
               </Switch>
         </Router>
     
-    
+        
      
       //create the routing path to render
     );
