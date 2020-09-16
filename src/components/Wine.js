@@ -32,7 +32,7 @@ class Wine extends React.Component {
         <div className='wineKid' key={wine.id}>
             <br/>
              <button onClick={()=>this.props.addToCart(wine)}>add to cart </button>
-             <button>remove from cart </button>
+             <button onClick={()=>this.props.deleteToCart(wine)}>remove from cart </button>
           <p>
              <img className='winepics' key={wine.id} src={wine.picture} alt ='wine bottle'/>
           </p>

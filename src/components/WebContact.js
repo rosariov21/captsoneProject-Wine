@@ -20,7 +20,7 @@ export default function WebContact() {
 
   <Form.Group controlId="formGridAddress1">
     <Form.Label>Address</Form.Label>
-    <Form.Control placeholder="1234 Main St" />
+    <Form.Control placeholder="804 E 138th St"/>
   </Form.Group>
 
   <Form.Group controlId="formGridAddress2">
@@ -38,12 +38,16 @@ export default function WebContact() {
       <Form.Label>State</Form.Label>
       <Form.Control as="select" defaultValue="Choose...">
         <option>Choose...</option>
-        <option>...</option>
+        <option>Bronx</option>
+        <option>Manhattan</option>
+        <option>Brooklyn</option>
+        <option>Queens</option>
+
       </Form.Control>
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridZip">
-      <Form.Label>Zip</Form.Label>
+      <Form.Label>Zip-Code</Form.Label>
       <Form.Control />
     </Form.Group>
   </Form.Row>

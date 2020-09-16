@@ -15,17 +15,25 @@ this.deleteToCart = this.deleteToCart.bind(this);
     }
    
     addToCart(item){
+        console.log("addToCart")
+        let newitem = {
+            name: item.name,
+            image: item.image_url ? item.image_url : item.picture,
+            id: item.id,
+            price: item.price ? item.price : 12
+        }
         this.setState({
-            shoppingList:this.state.shoppingList.concat(item)
+            shoppingList:this.state.shoppingList.concat(newitem)
 
         })
         console.log(this.state.shoppingList)
     }
         deleteToCart(item){
-            let shoppingListCopy = [...this.state.shoppingList]
+            console.log("deleteToCart")
+            let shoppingListCopy = this.state.shoppingList.filter(keep=>keep.id!=item.id)
             console.log(item)
             this.setState({
-                deleteShoppingList:this.state.shoppingList
+                shoppingList:shoppingListCopy
              })
     
              
@@ -34,8 +42,8 @@ this.deleteToCart = this.deleteToCart.bind(this);
     }
  render (){
     return(
-        <div>
-        <NavBar addToCart={this.addToCart} cartCount = {this.state.shoppingList.length}  deleteToCart={this.deleteToCart}/>
+        <div >
+        <NavBar addToCart={this.addToCart} cartCount = {this.state.shoppingList.length}  deleteToCart={this.deleteToCart} shoppingList={this.state.shoppingList}/>
 
         <h5 style={{textAlign: 'center', color: 'white', fontFamily: 'cursive' , marginTop: '100px' }}>Order placed successfully. <br/>
            Confirmation Number: 00000-2B5IH-1D4DW-6RU05</h5>

@@ -9,7 +9,7 @@ export default function ThankYou() {
   
   <h4>
     Aww yeah, you successfully read this important alert message. We want you to know we 
-    value your needs. 
+    value your needs. Let us come to you during this pandemic no need to go through lines when we can deliver to you 
   </h4>
   <hr />
   <h3 className="mb-0">

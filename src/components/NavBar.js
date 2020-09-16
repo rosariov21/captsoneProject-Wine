@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Beer from './Beer';
 import shop  from '../images/shop.png'
 import Wine from './Wine';
-
+import CheckOut from './CheckOut';
 import 
 {BrowserRouter as Router, Route, Switch, Link} 
 from 'react-router-dom';
@@ -42,10 +42,13 @@ export default class NavBar extends Component{
                   <Link className="navBar" to ="/WebContact">Contact</Link>
                 </li>
                 <li>
+                <li>
+                  <Link className="navBar" to ="/CheckOut">CheckOut
+                
                 <img src={shop} width="50px"/>
                     {this.props.cartCount}
-                    
-                    
+                    </Link>
+                    </li>
                 </li>
               </ul>
               
@@ -55,9 +58,10 @@ export default class NavBar extends Component{
   
           
    <Route  exact path="/Home" component={Home} />
-   <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart} deleteToCart={this.props.addToCart}/>} />
-              <Route path ="/Wine" component={()=><Wine addToCart={this.props.addToCart} deleteToCart={this.props.addToCart}/>}/>
+   <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart}/>} />
+              <Route path ="/Wine" component={()=><Wine addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart}/>}/>
               <Route path = "/WebContact" component={WebContact}/>
+              <Route path ="/CheckOut" component={()=><CheckOut addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart} shoppingList={this.props.shoppingList}/>}/>
               </Switch>
         </Router>
     
