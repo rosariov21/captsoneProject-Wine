@@ -1,86 +1,104 @@
-import React from 'react'
-import { Col,Form,Button } from 'react-bootstrap'
-export default function WebContact() {
-    return (
-        
-            <div className="contactParent">
-                <div className="contacts">
-                <Form>
-  <Form.Row>
-    <Form.Group as={Col} controlId="formGridEmail">
-      <Form.Label>Email</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
-    </Form.Group>
+// import React, { Component } from "react";
+// import {UserApi} from '../Config/UserApi';
+// import { Form,Col,Button } from 'react-bootstrap'
+// import axios from 'axios'
 
-    <Form.Group as={Col} controlId="formGridPassword">
-      <Form.Label>Password</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
-    </Form.Group>
-  </Form.Row>
+// export default class WebContact extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             employee: []
+//         };
+//     }
+//     getUsersData() {
+//         axios
+//             .get( {UserApi})
+//             .then(res => {
+//                 const data = res.data
+//                 console.log(data)
+//                 const employee = data.map(u =>
+//                     <div>
+//                     <p>{u.id}</p>
+//                     <p>{u.firstName}</p>
+//                     <p>{u.lastName}</p>
+//                     <p>{u.mobile}</p>
+//                     <p>{u.email}</p>
+//                     <p>{u.password}</p>
+//                     </div>
+//                     )
 
-  <Form.Group controlId="formGridAddress1">
-    <Form.Label>Address</Form.Label>
-    <Form.Control placeholder="804 E 138th St"/>
-  </Form.Group>
+//                     this.setState({
+//                         employee
+//                     })
 
-  <Form.Group controlId="formGridAddress2">
-    <Form.Label>Address 2</Form.Label>
-    <Form.Control placeholder="Apartment, studio, or floor" />
-  </Form.Group>
+//             })
+//             .catch((error) => {
+//                 console.log(error)
+//             })
 
-  <Form.Row>
-    <Form.Group as={Col} controlId="formGridCity">
-      <Form.Label>City</Form.Label>
-      <Form.Control />
-    </Form.Group>
+//     }
+//     componentDidMount(){
+//         this.getUsersData()
+//     }
+//     render() {
 
-    <Form.Group as={Col} controlId="formGridState">
-      <Form.Label>State</Form.Label>
-      <Form.Control as="select" defaultValue="Choose...">
-        <option>Choose...</option>
-        <option>Bronx</option>
-        <option>Manhattan</option>
-        <option>Brooklyn</option>
-        <option>Queens</option>
+//         return (
+//             <div>
+//                 {this.state.employee}
+//                 <div className="contactParent">
+//                 <div className="contacts">
+//                 <Form>
+//   <Form.Row>
+//     <Form.Group as={Col} controlId="formGridEmail">
+//       <Form.Label>Email</Form.Label>
+//       <Form.Control type="email" placeholder="Enter email" />
+//     </Form.Group>
 
-      </Form.Control>
-    </Form.Group>
+//     <Form.Group as={Col} controlId="formGridPassword">
+//       <Form.Label>Password</Form.Label>
+//       <Form.Control type="password" placeholder="Password" />
+//     </Form.Group>
+//   </Form.Row>
+//   <Form.Row>
+//   <Form.Group  as={Col} controlId="formGridFirstName">
+//     <Form.Label>First Name</Form.Label>
+//     <Form.Control type="name" placeholder="Enter First name"/>
+//   </Form.Group>
+//   </Form.Row>
+//   <Form.Group controlId="formGridLastName">
+//     <Form.Label>Last Name</Form.Label>
+//     <Form.Control placeholder="Last Name" />
+//   </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridZip">
-      <Form.Label>Zip-Code</Form.Label>
-      <Form.Control />
-    </Form.Group>
-  </Form.Row>
+//   <Form.Row>
+//     <Form.Group as={Col} controlId="formGridEmail">
+//       <Form.Label>Age</Form.Label>
+//       <Form.Control type="number" placeholder="Age" />
+//     </Form.Group>
+    
+//     <Form.Group as={Col} controlId="formGridEmail">
+//       <Form.Label>Mobile</Form.Label>
+//       <Form.Control type="mobile" placeholder="Mobile" />
+//       </Form.Group>
 
-  <Form.Group id="formGridCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
+//    </Form.Row>
+//   <Form.Group id="formGridCheckbox">
+//     <Form.Check type="checkbox" label="Check me out" />
+//   </Form.Group>
 
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-</Form>
+//   <Button variant="primary" type="submit">
+//     Submit
+//   </Button>
+// </Form>
                     
-                <h5 style={{textAlign: 'center', color: 'Bl' , marginTop: '100px' }}>
-                    Contact Us|Location
-                    </h5>  
-                    <h3 style={{textAlign: 'center', color: 'Bl' , marginTop: '100px' }}>
-                    Phone Number: 212-956-9093<br/>
-                    Address: 
-                    West Side, NY, Ny -10025
-                    </h3>
-                    <h3 style={{textAlign: 'center', color: 'Bl' , marginTop: '100px' }}>
-                    Email: WineAnyTime@gmail.com
-                    <br/>
-                    <span>Hours of Business Operations </span><br/>
-                    Mon-Saturday:10:00 am-11:30 pm</h3>
-                    <hr/>
-                </div>
+            
+//                 </div>
               
-            <div>
+//             <div>
                   
-            </div>
-        </div>
-       
-    )
-}
+//             </div>
+//         </div>
+//             </div>
+//         )
+//     }
+// }

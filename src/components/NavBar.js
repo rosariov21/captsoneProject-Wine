@@ -7,7 +7,7 @@ import
 {BrowserRouter as Router, Route, Switch, Link} 
 from 'react-router-dom';
 
-import WebContact from './WebContact';
+import UserAPI from './UserAPI';
 import Home from './Home';
 
 export default class NavBar extends Component{
@@ -39,17 +39,18 @@ export default class NavBar extends Component{
              
             
                 <li>
-                  <Link className="navBar" to ="/WebContact">Contact</Link>
+                  <Link className="navBar" to ="/UserAPI">Contact</Link>
                 </li>
-                <li>
-                <li>
-                  <Link className="navBar" to ="/CheckOut">CheckOut
                 
-                <img src={shop} width="50px"/>
+                <li>
+                  <Link className="navBar" to ="/CheckOut">CheckOut </Link>
+
+                  <img src={shop} width="50px"/>
                     {this.props.cartCount}
-                    </Link>
-                    </li>
-                </li>
+                  </li>
+
+                 
+               
               </ul>
               
             </nav>
@@ -60,7 +61,7 @@ export default class NavBar extends Component{
    <Route  exact path="/Home" component={Home} />
    <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart}/>} />
               <Route path ="/Wine" component={()=><Wine addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart}/>}/>
-              <Route path = "/WebContact" component={WebContact}/>
+              <Route path = "/UserAPI" component={UserAPI}/>
               <Route path ="/CheckOut" component={()=><CheckOut addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart} shoppingList={this.props.shoppingList}/>}/>
               </Switch>
         </Router>

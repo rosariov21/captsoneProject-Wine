@@ -17,7 +17,9 @@ export default class CheckOut extends Component{
              
             return(
             <div>
-            <ul className='center1'>{
+              
+                  
+            <ul>{
             this.state.shoppingList.map(item => {return(<li>{item.name}<img src ={item.image}/> {item.id} {item.price}</li>)})
 
             }</ul>
@@ -26,6 +28,8 @@ export default class CheckOut extends Component{
                     this.state.total
              
              }
+
+
              </div>
             )
         }
