@@ -1,22 +1,52 @@
 import React from 'react'
 
 
-import gifbeer from '../images/gifbeer.gif';
-import {embed, ResponsiveEmbed} from 'react-bootstrap'; 
+import red from '../images/red.jpg';
+import {embed, ResponsiveEmbed, Carousel} from 'react-bootstrap'; 
 export default function Home() {
     return (
-  <div className='foo'>    
+        
+  <div className='foo'  >   
+   
       <br/>
-   <div>
-   <div>
-   <h2 style={{textAlign: 'center', color: 'white', backgroundColor:'teal'}}>
+   <div >
+   <div >
+
+  
+   <h2 style={{textAlign: 'center', color: 'white' }}>
    Let the Drinks Come to You.</h2>
-   <ResponsiveEmbed aspectRatio="16by9">
+   {/* <ResponsiveEmbed aspectRatio="16by9">
       
           <embed src={gifbeer} style={{  height: 'auto' }}  />
-          </ResponsiveEmbed>   
+          </ResponsiveEmbed>    */}
+ 
+<Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://cdn11.bigcommerce.com/s-ejfomtx0h7/images/stencil/original/carousel/11/brews3.jpg?c=2"
+      alt="First slide" style={{text:"let the drinks come to you ",color: 'white' }}/>
+  
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://www.dennisgroup.com/wp-content/uploads/2019/06/iStock-904073158small.jpg"
+      alt="second slide"
+    />
+
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://www.1000storieswines.com/wp-content/uploads/C0023_retouched-poster.jpg"
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel> 
           
-          <h4 style={{textAlign:'center', color: 'white', backgroundColor:'teal' }}>Beer and Wine Delivered to your home in under 60 mintes</h4>
+          <h4 style={{textAlign:'center', color: 'white' }}>Beer and Wine Delivered to your home in under 60 mintes</h4>
           </div> 
         </div>
       

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from './NavBar';
+import NavBar from './Nav';
 
 export default class ShoppingCart extends Component{
     constructor(props){
@@ -45,8 +45,7 @@ this.deleteToCart = this.deleteToCart.bind(this);
         <div >
         <NavBar addToCart={this.addToCart} cartCount = {this.state.shoppingList.length}  deleteToCart={this.deleteToCart} shoppingList={this.state.shoppingList}/>
 
-        <h5 style={{textAlign: 'center', color: 'white', fontFamily: 'cursive' , marginTop: '100px' }}>Order placed successfully. <br/>
-           Confirmation Number: 00000-2B5IH-1D4DW-6RU05</h5>
+   
         </div>
     )
  }

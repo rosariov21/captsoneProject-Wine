@@ -28,6 +28,8 @@ nav{
   padding-right: 60px;
   font-style: normal;
   font-size: 20px;
+  display: block;
+ 
 
 
 content:"";
@@ -146,3 +148,24 @@ form {
 /* Large devices (laptops/desktops, 992px and up) -- This would display the text at 10.0rem on laptops and larger screens */
 
 
+.App{
+  background-image:url(https://www.1000storieswines.com/wp-content/uploads/C0023_retouched-poster.jpg);
+}
+
+.parentBoxContainer{
+  background-color: white;
+}
+
+.title{
+  background-color: white;
+}
+
+Form{
+background-color: white;
+}
+
+
+.table {
+color: white;
+background-color: brown;
+}
