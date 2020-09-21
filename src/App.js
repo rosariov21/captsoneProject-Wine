@@ -13,6 +13,7 @@ import ThankYou from './components/ThankYou';
 
 function App() {
   return (
+   
     <div className="App">
     <div className="container">
       
@@ -30,6 +31,7 @@ function App() {
     </div>
     </div>
     </div>
+    
   );
 }
 

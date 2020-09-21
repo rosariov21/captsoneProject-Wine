@@ -1,8 +1,9 @@
 
 import React, { Component } from "react";
-
+import {UserApi} from '../Config/UserApi';
 import { Form,Col,Button, Table} from 'react-bootstrap'
-
+import axios from 'axios'
+import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 
 export default class SignUp extends Component {
     constructor(props) {
@@ -40,11 +41,21 @@ let newUser = {
     password:this.state.password
 }
     }
-
-
-    componentDidMount(){
-        this.get()
+getUserData() {
+  axios.get(`https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees/${this.props.id}`)
+  .then(res => {
+    console.log(res);
+    console.log(res.data);
+    this.setState({firstName:res.data.firstName,lastName:res.data.lastName,
+      email:res.data.email, age:res.data.age, password:res.data.password, mobile:res.data.mobile})
+    
+  })
+}
+componentDidMount() {
+  this.getUserData()
+  
     }
+
     render() {
 
         return (
@@ -131,4 +142,4 @@ let newUser = {
             </div>
         )
     }
-  }
+}

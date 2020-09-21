@@ -248,10 +248,13 @@
 import React from 'react';
   
 import axios from 'axios';
+
+import SignUp from './SignUp';
   
-export default class MakeUpdate extends React.Component {
+class MakeUpdate extends React.Component {
   state = {
-    posts: []
+    posts: [],
+    editing:false
   }
   
   componentDidMount() {
@@ -273,12 +276,25 @@ export default class MakeUpdate extends React.Component {
       })
   
   }
-  
+
+  editUser(id){
+
+      this.setState({editing:id})
+
+  }
+
+
   render() {
+      let showContent = this.state.editing ? <SignUp id={this.state.editing}/> : ''; 
     return (
       <div className='table'>
         <h1>Profile</h1>
-  
+        
+
+
+        {
+            showContent
+        }
         <table className="table table-bordered" >
           
   
@@ -294,6 +310,7 @@ export default class MakeUpdate extends React.Component {
                  <td >{post.password}</td>
                   <td>
                     <button className="btn btn-danger" onClick={(e) => this.deleteRow(post.id, e)}>Delete</button>
+                    <button className="btn btn-danger" onClick={(e) => this.editUser(post.id)}>Edit</button>
                   </td>
                 </tr>
               ))}
@@ -307,3 +324,5 @@ export default class MakeUpdate extends React.Component {
     )
   }
 }
+
+export default MakeUpdate;
