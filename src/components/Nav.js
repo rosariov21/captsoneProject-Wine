@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Beer from './Beer';
-import shop  from '../images/shop.png'
+import YellowC from '../images/YellowC.png'
+import WCart from '../images/WCart.png'
 import Wine from './Wine';
 import CheckOut from './CheckOut';
 import SignUp from './SignUp';
@@ -49,7 +50,7 @@ export default class Nav extends Component{
                 <li>
                   <Link className="navBar" to ="/CheckOut" style={{textAlign: 'center', color: 'yellow' }}>CheckOut </Link>
 
-                  <img src={shop} width="50px" />
+                  <img src={YellowC} width="40px" />
                     {this.props.cartCount}
                   </li>
 
