@@ -18,7 +18,7 @@ class ModalPop extends React.Component{
     render(){
         return(
             <div>
-                {/* <Button onClick={()=>{this.handleModal()}}>READ ME </Button>
+                <Button onClick={()=>{this.handleModal()}}>READ ME </Button>
                 <Modal show={this.state.show} onHide={()=>this.handleModal()}>
                     <Modal.Header closeButton>Age Restrictions</Modal.Header>
                     <Modal.Body>
@@ -29,7 +29,7 @@ class ModalPop extends React.Component{
                             Close Modal
                         </Button>
                     </Modal.Footer>
-                </Modal> */}
+                </Modal>
             </div>
         );
     }

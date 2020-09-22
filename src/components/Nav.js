@@ -5,6 +5,7 @@ import WCart from '../images/WCart.png'
 import Wine from './Wine';
 import CheckOut from './CheckOut';
 import SignUp from './SignUp';
+import Login from './Login'
 import 
 {BrowserRouter as Router, Route, Switch, Link} 
 from 'react-router-dom';
@@ -15,7 +16,15 @@ import Home from './Home';
 export default class Nav extends Component{
     constructor(props){
         super(props)
+        this.state = {
+          id : ""
+        }
     }
+    setId = (id)=>{
+      this.setState({id})
+    }
+
+
     render(){
 
     
@@ -46,7 +55,12 @@ export default class Nav extends Component{
                 <li>
                   <Link className="navBar" to ="/SignUp"style={{textAlign: 'center', color: 'yellow' }}>SignUp</Link>
                 </li>
-                
+                <li className="nav-item">
+                <Link className="nav-link" to={"/Login"} style={{textAlign: 'center', color: 'yellow' }}>Login</Link>
+              </li>
+
+
+
                 <li>
                   <Link className="navBar" to ="/CheckOut" style={{textAlign: 'center', color: 'yellow' }}>CheckOut </Link>
 
@@ -66,9 +80,13 @@ export default class Nav extends Component{
    <Route  exact path="/Home" component={Home} />
    <Route path="/Beer" component={()=><Beer addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart}/>} />
               <Route path ="/Wine" component={()=><Wine addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart}/>}/>
-              <Route path = "/MakeUpdate" component={MakeUpdate}/>
-              <Route path = "/SignUp" component={SignUp}/>
+              <Route path = "/MakeUpdate" render={()=><MakeUpdate setId={this.setId}/>} />
+              <Route path = "/SignUp" render={()=><SignUp currentId={this.state.id} setId={this.setId}/>}  />
               <Route path ="/CheckOut" component={()=><CheckOut addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart} shoppingList={this.props.shoppingList}/>}/>
+             
+           
+             <Route path ="/Login" component={Login}/>
+             
               </Switch>
         </Router>
     

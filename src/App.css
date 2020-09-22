@@ -171,6 +171,10 @@ color: white;
 background-color:yellow;
 
 }
+.Table{
+  padding: 5px 25px;
+  margin: 7px 4px;
+}
 
 .btn-dangerD{
   display: inline-block;
@@ -234,3 +238,9 @@ background-color:yellow;
   padding: 5px 25px;
   margin: 10px 30px;
 }
+
+.checkout{
+  height: 100px;
+  width: 200px;
+}
+

@@ -31,6 +31,7 @@ export default class SignUp extends Component {
 
     handleSubmit=(e)=>{
 e.preventDefault()
+
 console.log('post!')
 let newUser = {
     firstName:this.state.firstName,
@@ -40,6 +41,29 @@ let newUser = {
     email:this.state.email,
     password:this.state.password
 }
+console.log('props')
+console.log(this.props)
+console.log(this.props.id)
+ if (this.props.id){
+  axios.put(`https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees/${this.props.id}`,  newUser)
+  .then(res=>{
+    console.log(res);
+    
+  })
+  .catch(errors=>console.log(errors))
+
+ }
+ else{
+  axios.post(`https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees`, newUser)
+  .then(res=>{
+    console.log(res);
+    
+  })
+  .catch(errors=>console.log(errors))
+     
+ }
+
+// this.props.setId('')
     }
 getUserData() {
   axios.get(`https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees/${this.props.id}`)

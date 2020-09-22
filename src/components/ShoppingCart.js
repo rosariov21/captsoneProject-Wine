@@ -43,7 +43,7 @@ this.deleteToCart = this.deleteToCart.bind(this);
  render (){
     return(
         <div >
-        <NavBar addToCart={this.addToCart} cartCount = {this.state.shoppingList.length}  deleteToCart={this.deleteToCart} shoppingList={this.state.shoppingList}/>
+        <NavBar   addToCart={this.addToCart} cartCount = {this.state.shoppingList.length}  deleteToCart={this.deleteToCart} shoppingList={this.state.shoppingList}/>
 
    
         </div>

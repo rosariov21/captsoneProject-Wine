@@ -19,7 +19,7 @@ export default function Home() {
       
           <embed src={gifbeer} style={{  height: 'auto' }}  />
           </ResponsiveEmbed>    */}
- 
+
 <Carousel>
   <Carousel.Item>
     <img
@@ -32,7 +32,7 @@ export default function Home() {
     <img
       className="d-block w-100"
       src="https://www.dennisgroup.com/wp-content/uploads/2019/06/iStock-904073158small.jpg"
-      alt="second slide"  height= "500px" width="200px" />
+      alt="second slide"  height= "500px" width="200px" length="200px"/>
 
 
   </Carousel.Item>
@@ -40,7 +40,7 @@ export default function Home() {
     <img
       className="d-block w-100"
       src="https://www.1000storieswines.com/wp-content/uploads/C0023_retouched-poster.jpg"
-      alt="Third slide" height= "500px" width="200px"/>
+      alt="Third slide" length="200px" height= "500px" width="200px" length="200px"/>
   </Carousel.Item>
 </Carousel> 
           

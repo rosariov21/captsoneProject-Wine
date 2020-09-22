@@ -22,13 +22,13 @@ export default class CheckOut extends Component{
             <div>
               
                   
-            <ul>{
-            this.state.shoppingList.map(item => {return(<li>{item.name}<img src ={item.image}/> {item.id} {item.price}</li>)})
+            <ul style={{textAlign: 'center', color: 'yellow' }}>{
+            this.state.shoppingList.map(item => {return(<li>{item.name}<img className="Checkout" src ={item.image}/> {item.id} {item.price}</li>)})
 
             }</ul>
 
-                total: {
-                    this.state.total
+               <h3 style={{textAlign: 'center', color: 'yellow' }}>total:</h3> {
+                 this.state.total 
              
              }
 
