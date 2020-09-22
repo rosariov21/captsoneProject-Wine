@@ -20,7 +20,6 @@ export default class Beer extends Component{
       
     }
 
-
     componentDidMount(){
         this.getBeerInfo()
     }

@@ -25,15 +25,14 @@ export default function Home() {
     <img
       className="d-block w-100"
       src="https://cdn11.bigcommerce.com/s-ejfomtx0h7/images/stencil/original/carousel/11/brews3.jpg?c=2"
-      alt="First slide" style={{text:"let the drinks come to you ",color: 'white' }}/>
+      alt="First slide" style={{text:"let the drinks come to you ",color: 'white' }}  height= "500px" width="200px"/>
   
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
       src="https://www.dennisgroup.com/wp-content/uploads/2019/06/iStock-904073158small.jpg"
-      alt="second slide"
-    />
+      alt="second slide"  height= "500px" width="200px" />
 
 
   </Carousel.Item>
@@ -41,8 +40,7 @@ export default function Home() {
     <img
       className="d-block w-100"
       src="https://www.1000storieswines.com/wp-content/uploads/C0023_retouched-poster.jpg"
-      alt="Third slide"
-    />
+      alt="Third slide" height= "500px" width="200px"/>
   </Carousel.Item>
 </Carousel> 
           
