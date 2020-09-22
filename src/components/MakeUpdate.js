@@ -3,7 +3,8 @@ import React from 'react';
 import axios from 'axios';
 
 import SignUp from './SignUp';
-  
+import { Table, respnsive } from 'react-bootstrap';
+
 class MakeUpdate extends React.Component {
   state = {
     posts: [],
@@ -48,7 +49,7 @@ class MakeUpdate extends React.Component {
         {
             showContent
         }
-        <table className="table table-bordered" >
+        <Table striped bordered hover className="table table-bordered" >
           
   
             <tbody >
@@ -71,7 +72,7 @@ class MakeUpdate extends React.Component {
               ))}
             </tbody>
   
-        </table>
+        </Table>
       
 </div>
 

@@ -27,12 +27,12 @@ export default class Beer extends Component{
         return(
             bList.map(beer =>
                 <div className="bigParent" key={beer['id']}>
+                    
                  
                  
                 <ol className="center">
                 
-                <button onClick={()=>this.props.addToCart(beer)}>add to cart </button>
-                <button onClick={()=>this.props.deleteToCart(beer)}>remove from cart </button>
+               
                 <li>
                     <img  className="BeerImg" src={beer.image_url} alt="Beer Type"/>
                     </li>
@@ -47,7 +47,8 @@ export default class Beer extends Component{
                     
                     
                 </ol>
-        
+                <button className="add" onClick={()=>this.props.addToCart(beer)}>add to cart </button>
+                <button className="remove" onClick={()=>this.props.deleteToCart(beer)}>remove from cart </button>
         
                 </div>))
                 // this is the part where you invoke the data by using the actual name from data
@@ -99,7 +100,8 @@ handleUserInput(e){
             <div className="parentBoxContainer">
       <div className="boxContainer">
      <input className="searchBox"  type="text" placeholder="Search Beer" onChange={this.handleUserInput}/>
- <button type="submit">Get Beers Information</button>
+
+ <Button variant="primary" type="submit">Get Beers Information</Button>
         </div>
 
 

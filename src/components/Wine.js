@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import axios from 'axios';
-
+import { Button } from "react-bootstrap";
 
 
 class Wine extends React.Component {
@@ -31,8 +31,7 @@ class Wine extends React.Component {
 
         <div className='wineKid' key={wine.id}>
             <br/>
-             <button onClick={()=>this.props.addToCart(wine)}>add to cart </button>
-             <button onClick={()=>this.props.deleteToCart(wine)}>remove from cart </button>
+
           <p>
              <img className='winepics' key={wine.id} src={wine.picture} alt ='wine bottle'/>
           </p>
@@ -47,6 +46,8 @@ class Wine extends React.Component {
              <br/>
              {wine.description}  
           </p>
+          <button  className="add" onClick={()=>this.props.addToCart(wine)}>add to cart </button>
+             <button className="remove" onClick={()=>this.props.deleteToCart(wine)}>remove from cart </button>
           </div>
       ))
         
@@ -101,7 +102,8 @@ console.log(this.state.wines[0].name)
             
             <div className='parent'>
             <input className="searchBox"  type="text" placeholder="Search wine" onChange={this.handleUserInput}/>
- <button type="submit">Get Wine Information</button>
+
+            <Button variant="primary" type="submit">Get Wine Information</Button>
             {this.state.filterWine}
 </div>
 </div>
