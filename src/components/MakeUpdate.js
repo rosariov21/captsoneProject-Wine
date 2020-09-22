@@ -309,8 +309,10 @@ class MakeUpdate extends React.Component {
                   <td >{post.email}</td>
                  <td >{post.password}</td>
                   <td>
-                    <button className="btn btn-danger" onClick={(e) => this.deleteRow(post.id, e)}>Delete</button>
-                    <button className="btn btn-danger" onClick={(e) => this.editUser(post.id)}>Edit</button>
+                   
+                    <button className="btn-dangerD" onClick={(e) => this.deleteRow(post.id, e)}>Delete <break/></button>
+                    
+                    <button className="btn-dangerU" onClick={(e) => this.editUser(post.id)}>Edit</button>
                   </td>
                 </tr>
               ))}

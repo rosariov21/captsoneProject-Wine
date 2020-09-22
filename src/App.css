@@ -11,6 +11,7 @@
 }
 nav{
   justify-content: center;
+ 
 }
 
 nav{
@@ -30,7 +31,7 @@ nav{
   font-size: 20px;
   display: block;
  
-
+  color:yellow;
 
 content:"";
 
@@ -47,7 +48,7 @@ ol{
   margin: auto;
   padding: 25px;
   justify-content: space-between;
-
+  
 }
 
 p{
@@ -59,7 +60,7 @@ p{
 li{
   display: inline;
   margin: 20px;
- 
+
 }
 
 .main{
@@ -167,5 +168,34 @@ background-color: white;
 
 .table {
 color: white;
-background-color: brown;
+background-color:yellow;
+
+}
+
+.btn-dangerD{
+  display: inline-block;
+  padding: 5px 25px;
+  margin: 7px 4px;
+
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: red;
+
+}
+
+.btn-dangerU{
+  display: inline-block;
+  padding: 5px 25px;
+  margin: 7px 4px;
+
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: green;
+
 }
