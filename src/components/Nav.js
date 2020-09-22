@@ -27,29 +27,29 @@ export default class Nav extends Component{
             <nav >
               <ul>
               <li>
-                <Link className='navBar' to = "/Home">Home</Link>
+                <Link className='navBar' to = "/Home"  style={{textAlign: 'center', color: 'yellow' }}>Home</Link>
                 </li>
                 <li>
-                  <Link className="navBar" to ="/Beer">Beer</Link>
+                  <Link className="navBar" to ="/Beer" style={{textAlign: 'center', color: 'yellow' }}>Beer</Link>
                 </li>
                 
 
                 <li>
-                   <Link className="navBar" to ="/Wine">Wine</Link>
+                   <Link className="navBar" to ="/Wine" style={{textAlign: 'center', color: 'yellow' }}>Wine</Link>
                 </li>
              
             
                 <li>
-                  <Link className="navBar" to ="/MakeUpdate">Profile</Link>
+                  <Link className="navBar" to ="/MakeUpdate"style={{textAlign: 'center', color: 'yellow' }}>Profile</Link>
                 </li>
                 <li>
-                  <Link className="navBar" to ="/SignUp">SignUp</Link>
+                  <Link className="navBar" to ="/SignUp"style={{textAlign: 'center', color: 'yellow' }}>SignUp</Link>
                 </li>
                 
                 <li>
-                  <Link className="navBar" to ="/CheckOut">CheckOut </Link>
+                  <Link className="navBar" to ="/CheckOut" style={{textAlign: 'center', color: 'yellow' }}>CheckOut </Link>
 
-                  <img src={shop} width="50px"/>
+                  <img src={shop} width="50px" />
                     {this.props.cartCount}
                   </li>
 
