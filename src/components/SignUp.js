@@ -88,8 +88,9 @@ componentDidMount() {
                 <div className="contactParent">
                 <div className="contacts">
                 <Form onSubmit={this.handleSubmit}>
+                <h3>SIGN UP</h3>
   <Form.Row>
-
+         
     <Form.Group as={Col} controlId="formGridEmail">
 
       <Form.Label>Email</Form.Label>
