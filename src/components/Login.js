@@ -35,7 +35,7 @@ export default class Login extends Component {
     render() {
         return (
             <form>
-            <h3>Sign Up</h3>
+            <h3>Log In</h3>
 
             <div className="form-group">
                 <label>First name</label>
