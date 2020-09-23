@@ -73,7 +73,7 @@ console.log(this.state.wines[0].name)
 }
 
       getWine(){
-        axios.get('http://myapi-profstream.herokuapp.com/api/db6de6/wines')
+        axios.get('https://myapi-profstream.herokuapp.com/api/db6de6/wines')
           .then(response => {
             this.setState({
               wines:response.data,
@@ -86,6 +86,7 @@ console.log(this.state.wines[0].name)
       }
 
       componentDidMount(){
+          console.log('version1.0')
           this.getWine()
       }
 
