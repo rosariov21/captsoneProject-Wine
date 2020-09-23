@@ -1,8 +1,31 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+You can deploy in netlify and in firebase 
+https://angry-minsky-32dbf0.netlify.app/Home
+https://wine2020.web.app/Home 
+second onw is in firebase 
 
-In the project directory, you can run:
+Main Objective
+
+Making a website that provides my customers with different kinds of wine 
+Similar to last project on mod 2 i want my users to click on the wine that displays in a single webpage
+I want to add a module that pops up to have user information will add a function if the user is over 21 they are allowed in the website 
+This is for adults over 21 to purchase bottle of wine 
+Users will have capability to add wine selection in the cart
+I will have a wish basket for maybe later they can have it saved in there account 
+In order to have users save their “maybe wines “ they must create an account 
+For users who don't want to go to a liquor store , they can pre-order the wine and have it deliver  
+
+
+Backend is deployed in Heroku- 
+Current API 
+
+https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees
+
+this is deployed in Heroku - API 
+
+
+
 
 ### `npm start`
 
@@ -66,3 +89,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+

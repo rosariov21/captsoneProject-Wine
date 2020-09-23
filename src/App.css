@@ -375,10 +375,12 @@ td{
   box-shadow: 0 4px 8px ;
   transition: 0.3s;
   max-width: 15%;
-  padding: 0 4px;
+  padding: 10 14px;
   background-color:white;
   display: flex;
-  
+ 
+  margin-left: auto;
+  margin-right: auto;
 }
 .age:hover{
 background-color: red;
