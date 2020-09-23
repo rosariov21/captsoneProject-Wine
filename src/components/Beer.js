@@ -30,12 +30,12 @@ export default class Beer extends Component{
                     
                  
                  
-                <ol className="center">
+                <div className="center">
                 
                
-                <li>
+                <p>
                     <img  className="BeerImg" src={beer.image_url} alt="Beer Type"/>
-                    </li>
+                    </p>
                     
                     <h1 className='name'>Name: {beer.name}</h1>
                            <br/>
@@ -46,7 +46,7 @@ export default class Beer extends Component{
                     <h5 className="description">Information aboout the beer:{beer.description}</h5>
                     
                     
-                </ol>
+                </div>
                 <button className="add" onClick={()=>this.props.addToCart(beer)}>add to cart </button>
                 <button className="remove" onClick={()=>this.props.deleteToCart(beer)}>remove from cart </button>
         

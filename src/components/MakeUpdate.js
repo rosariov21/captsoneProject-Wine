@@ -63,7 +63,7 @@ console.log("editing")
   
             <tbody >
               {this.state.posts.map((post) => (
-                <tr>
+                <tr className='column'> 
                   <td >{post.id}</td>
                   <td>{post.firstName}</td>
                   <td>{post.lastName}</td>

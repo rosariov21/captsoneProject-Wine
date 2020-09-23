@@ -4,6 +4,7 @@ import {UserApi} from '../Config/UserApi';
 import { Form,Col,Button, Table} from 'react-bootstrap'
 import axios from 'axios'
 import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
+import { get } from "jquery";
 
 export default class SignUp extends Component {
     constructor(props) {
@@ -48,7 +49,8 @@ console.log(this.props.id)
   axios.put(`https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees/${this.props.id}`,  newUser)
   .then(res=>{
     console.log(res);
-    
+    console.log('get')
+    this.getUserData()
   })
   .catch(errors=>console.log(errors))
 
