@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can deploy in netlify and in firebase 
-https://angry-minsky-32dbf0.netlify.app/Home
-https://wine2020.web.app/Home 
+https://wine2020.web.app/Home
+https://tender-lovelace-934e4e.netlify.app/Home
 second onw is in firebase 
 https://rosariov21.github.io/MakeUpdate
 
