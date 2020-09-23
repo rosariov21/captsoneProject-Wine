@@ -6,6 +6,7 @@ import Wine from './Wine';
 import CheckOut from './CheckOut';
 import SignUp from './SignUp';
 import Login from './Login'
+import About from './About'
 import 
 {BrowserRouter as Router, Route, Switch, Link} 
 from 'react-router-dom';
@@ -68,7 +69,9 @@ export default class Nav extends Component{
                     {this.props.cartCount}
                   </li>
 
-                 
+                  <li className="nav-item">
+                <Link className="nav-link" to={"/About"} style={{textAlign: 'center', color: 'yellow' }}>About</Link>
+              </li>
                
               </ul>
               
@@ -83,7 +86,7 @@ export default class Nav extends Component{
               <Route path = "/MakeUpdate" render={()=><MakeUpdate setId={this.setId}/>} />
               <Route path = "/SignUp" render={()=><SignUp currentId={this.state.id} setId={this.setId}/>}  />
               <Route path ="/CheckOut" component={()=><CheckOut addToCart={this.props.addToCart} deleteToCart={this.props.deleteToCart} shoppingList={this.props.shoppingList}/>}/>
-             
+              <Route path path="/About" component={About} />
            
              <Route path ="/Login" component={Login}/>
              

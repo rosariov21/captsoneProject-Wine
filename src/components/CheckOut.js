@@ -19,7 +19,7 @@ export default class CheckOut extends Component{
         render(){
              
             return(
-            <div>
+            <div className='total'>
               
                   
             <ul style={{textAlign: 'center', color: 'yellow' }}>{
