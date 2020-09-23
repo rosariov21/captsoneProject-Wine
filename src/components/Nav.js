@@ -57,7 +57,7 @@ export default class Nav extends Component{
                   <Link className="navBar" to ="/SignUp"style={{textAlign: 'center', color: 'yellow' }}>SignUp</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link" to={"/Login"} style={{textAlign: 'center', color: 'yellow' }}>Login</Link>
+                <Link className="nav-link" to={"/Login"} style={{textAlign: 'center', color: 'yellow' }}>Login</Link><small></small>
               </li>
 
 
