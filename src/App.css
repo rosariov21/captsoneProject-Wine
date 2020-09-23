@@ -380,3 +380,6 @@ td{
   display: flex;
   
 }
+.age:hover{
+background-color: red;
+}

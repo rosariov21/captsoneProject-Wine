@@ -51,8 +51,8 @@ console.log("editing")
       let showContent = this.state.editing ? <SignUp id={this.state.editing}/> :''; 
     return (
       <div className='table'>
-        <h1>Profile</h1>
-        
+        <h1>Community Info</h1>
+        <h4>Check us out and see who enjoys shopping around </h4>
 
 
         {
@@ -64,12 +64,12 @@ console.log("editing")
             <tbody >
               {this.state.posts.map((post) => (
                 <tr className='column'> 
-                  <td >{post.id}</td>
-                  <td>{post.firstName}</td>
-                  <td>{post.lastName}</td>
-                  <td>{post.mobile}</td>
-                  <td >{post.age}</td>
-                  <td >{post.email}</td>
+                  <td > {post.id}</td>
+                  <td> First Name {post.firstName}</td>
+                  <td> Last Name <br/>{post.lastName}</td>
+                  <td> Mobile <br/>{post.mobile}</td>
+                  <td className="age" > Age <br/>{post.age}</td>
+                  <td > Email <br/>{post.email}</td>
                  <td >{post.password}</td>
                   <td>
                    
