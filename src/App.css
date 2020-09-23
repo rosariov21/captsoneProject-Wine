@@ -95,23 +95,7 @@ li{
     
 }
 
-.foo {
 
-  width: 100%;
-  margin: 0 auto;
-
-  /* Small Devices, Tablets */
-  @media only screen and (min-width : 768px) {
-    width: 75%;
-    
-  }
-
-  /* Medium Devices, Desktops */
-  @media only screen and (min-width : 992px) {
-    width: 50%;
-    background-color: pink;
-  }
-}
 
 
 form {
@@ -384,4 +368,59 @@ td{
 }
 .age:hover{
 background-color: red;
+}
+
+.Caro{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+   background-size: cover;
+   text-align: center;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   animation: myFrames2 20s step-end 0s infinite;
+   letter-spacing: 10px;
+   font-size: xx-large;
+   text-shadow: 3px 3px black;
+   color:aquamarine;
+}
+
+
+.home-img{
+  background-image: url("./images/ber.gif");
+  background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  animation: myFrames2 20s step-end 0s infinite;
+  letter-spacing: 10px;
+  font-size: xx-large;
+  text-shadow: 3px 3px black;
+  border: solid 3px;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+}
+@keyframes myFrames2{
+  10%{
+      background-image: url("./images/cheers.gif");
+       background-size: cover;
+   }
+   20%{
+      background-image: url("./images/ber.gif");
+       background-size: cover;
+   }
+   35%{
+      background-image: url("./images/wineH.gif");
+       background-size: cover;
+   }
+  }
+
+.App{
+
 }

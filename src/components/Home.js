@@ -6,11 +6,11 @@ import {embed, ResponsiveEmbed, Carousel} from 'react-bootstrap';
 export default function Home() {
     return (
         
-  <div className='foo'  >   
    
-      <br/>
-   <div >
-   <div >
+   
+    
+   
+   <div className= "home-img">
 
   
    <h2 style={{textAlign: 'center', color: 'yellow' }}>
@@ -20,7 +20,7 @@ export default function Home() {
           <embed src={gifbeer} style={{  height: 'auto' }}  />
           </ResponsiveEmbed>    */}
 
-<Carousel>
+{/* <Carousel className="Caro">
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -42,13 +42,14 @@ export default function Home() {
       src="https://www.1000storieswines.com/wp-content/uploads/C0023_retouched-poster.jpg"
       alt="Third slide" length="200px" height= "500px" width="200px" />
   </Carousel.Item>
-</Carousel> 
+</Carousel>  */}
+
           
           <h4 style={{textAlign:'center', color: 'yellow' }}>Beer and Wine Delivered to your home in under 60 mintes</h4>
           </div> 
-        </div>
+        
       
        
-   </div>
+   
     )
 }
