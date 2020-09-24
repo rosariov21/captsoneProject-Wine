@@ -8,7 +8,7 @@ import SignUp from './SignUp';
 import Login from './Login'
 import About from './About'
 import 
-{BrowserRouter as Router, Route, Switch, Link} 
+{HashRouter as Router, Route, Switch, Link} 
 from 'react-router-dom';
 
 import MakeUpdate from './MakeUpdate';
