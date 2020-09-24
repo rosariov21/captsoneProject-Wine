@@ -70,7 +70,7 @@ export default class Nav extends Component{
                   </li>
 
                   <li className="nav-item">
-                <Link className="nav-link" to={"/About"} style={{textAlign: 'center', color: 'yellow' }}>About</Link>
+                <Link className="nav-link" to={"/About"} style={{textAlign: 'center', color: 'yellow' }}>Photo Gallery</Link>
               </li>
                
               </ul>
