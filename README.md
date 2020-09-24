@@ -25,8 +25,8 @@ https://sheltered-refuge-36604.herokuapp.com/rose_api/v1/employees
 
 this is deployed in Heroku - API 
 
-
-
+this is the backend pushed on git hub 
+https://github.com/rosariov21/BE_Wine.git
 
 ### `npm start`
 
